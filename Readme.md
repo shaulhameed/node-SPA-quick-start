@@ -4,9 +4,7 @@
 
 ##Getting Started
  Get started by cloning this repository.
-
 <code> 
-
 	#Install Grunt-cli
 	npm install -g grunt-cli
 	
