@@ -3,7 +3,7 @@
 
 
 ##Getting Started
- Get started by cloning this repository.
+ Get started by cloning this repositor or by using bower.
  
 <code> 
 
@@ -11,7 +11,9 @@
 	npm install -g grunt-cli
 	
 	#Get the latest snapshot
-	git clone https://github.com/Shaul21h/node-SPA-quick-start.git
+	git clone https://github.com/Shaul21h/node-SPA-quick-start.git 
+	or 
+	bower install node-spa
 
 	cd myproject
 
