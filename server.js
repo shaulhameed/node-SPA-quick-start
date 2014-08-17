@@ -21,7 +21,7 @@ var app = express(),
 	app.set('env', 'development');
 
 	app.get('*', function(req, res){
-		res.sendfile('index.html');
+		res.sendfile('public/index.html');
 	});
 
 	server.listen(app.get('port'), function(){
