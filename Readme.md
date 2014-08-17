@@ -32,7 +32,7 @@ Getting Started
 >	node server.js
 
 
-Note: Prefer using 'nodemon' for your development as it watches the changes in your node js application and restarts the server. Once installed use 'nodemon server.js' instead of 'node server.js'.
+Note: Prefer using `nodemon` for your development as it watches the changes in your node js application and restarts the server. Once installed use `nodemon server.js` instead of `node server.js`.
 
 
 
