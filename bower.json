@@ -2,6 +2,7 @@
   "name": "Node-quick-start",
   "version": "0.0.0",
   "homepage": "https://github.com/Shaul21h/Node-quick-start",
+  "main":"server.js",
   "authors": [
     "Shaul Hameed <shaul21h@gmail.com>"
   ],
@@ -19,11 +20,10 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "vendor",
     "test",
     "tests"
   ],
-  "dependencies": {
+  "devDependencies": {
     "angular": "~1.2.22",
     "angular-route": "~1.2.22",
     "bootstrap": "~3.2.0",
