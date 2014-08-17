@@ -5,13 +5,11 @@
 ##Getting Started
  Get started by cloning this repository.
 
-<code>
- 	#Install Grunt-cli
-	npm install -g grunt-cli
-</code>
-
 <code> 
 
+	#Install Grunt-cli
+	npm install -g grunt-cli
+	
 	#Get the latest snapshot
 	git clone https://github.com/Shaul21h/node-SPA-quick-start.git
 
