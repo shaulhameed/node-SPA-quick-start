@@ -1,10 +1,32 @@
 html
 	head
 		title Node SPA
-		link(href='/styles/bootstrap.css', rel='stylesheet')
-		link(href='/styles/font-awesome.css', rel='stylesheet')
-	body
-		h1 Welcome to Node SPA
+		link(href='/css/bootstrap.css', rel='stylesheet')
+		link(href='/css/font-awesome.css', rel='stylesheet')
+		link(href='/css/app.css', rel='stylesheet')
+	body(data-ng-app='nspa')
+		.container
+			.navbar.navbar-default
+				.container-fluid
+					.navbar-header
+						a.navbar-brand(href='javascript:void(0)')
+							i.fa.fa-code
+							|  Node SPA
+					.navbar-collapse.collapse
+						form.navbar-form.navbar-right
+							.form-group
+								input.form-control(type='text', placeholder='Email')
+							.form-group
+								input.form-control(type='password', placeholder='password')
+							button.btn.btn-success(type='submit')
+								|Sign in
+			.content-view(ng-view)
+
+		.container.footer
+			.navbar.navbar-default.navbar-fixed-bottom
+				.container-fluid
+					.navbar-header
+
 		script(src='/scripts/angular.js')
 		script(src='/scripts/angular-route.js')
 		script(src='/scripts/app.js')

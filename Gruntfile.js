@@ -32,21 +32,21 @@ module.exports = function(grunt){
 						expand: true, 
 						cwd: 'vendor/bootstrap/less',
 						src: ['bootstrap.less'],
-						dest: 'public/styles',
+						dest: 'public/css',
 						ext: '.css'
 					},
 					{
 						expand: true, 
 						cwd: 'app/styles',
 						src: ['*.less'],
-						dest: 'public/styles',
+						dest: 'public/css',
 						ext: '.css'
 					},
 					{
 						expand: true, 
 						cwd: 'vendor/fontawesome/less',
 						src: ['font-awesome.less'],
-						dest: 'public/styles',
+						dest: 'public/css',
 						ext: '.css'
 					}
 
@@ -104,7 +104,7 @@ module.exports = function(grunt){
 		},	
 		open:{
 			dev:{
-				path: "http://localhost:6000",
+				path: "http://localhost:3000",
 				app: "Google Chrome"
 			}
 		},
@@ -112,18 +112,18 @@ module.exports = function(grunt){
 			all: ['public/app.js']
 		},
 		watch:{
+			js:{
+				files: ['app/.*js', 'app/**/*.js'],
+				tasks: ['concat', 'ngdocs'],
+				options: {
+					livereload:true
+				}
+			},
 			jade: {
 				files: ['app/*.jade', 'app/views/**/*.jade', 'app/**/*.jade'],
 				tasks: ['jade'],
 				options:{
 					livereload: true
-				}
-			},
-			concat:{
-				files: '<%= concat.dist.src %>',
-				tasks: ['concat','ngdocs'],
-				options: {
-					livereload:true
 				}
 			},
 			less:{
