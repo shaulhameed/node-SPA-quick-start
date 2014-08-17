@@ -1,6 +1,11 @@
 Node - Express SPA quick start template
 =======================================
 
+###Includes
++ express
++ jade
++ less
++ angularjs
 
 
 Getting Started
