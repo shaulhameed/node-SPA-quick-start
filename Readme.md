@@ -10,26 +10,26 @@ Getting Started
  
 
 >	#Install Grunt-cli
->	npm install -g grunt-cli
+>	`npm install -g grunt-cli`
 >	
 >	#Get the latest snapshot
->	git clone https://github.com/Shaul21h/node-SPA-quick-start.git 
->	or 
->	bower install node-spa
+>	`git clone https://github.com/Shaul21h/node-SPA-quick-start.git `
+>	`or `
+>	`bower install node-spa`
 >
->	cd myproject
+>	`cd myproject`
 >
 >	#Install NPM dependencies
->	npm install
+>	`npm install`
 >
 >	#Install BOWER dependencies
->	bower install
+>	`bower install`
 >
 >	#Run Grunt
->	grunt
+>	`grunt`
 >
 >	#Start your app
->	node server.js
+>	`node server.js`
 
 
 Note: Prefer using `nodemon` for your development as it watches the changes in your node js application and restarts the server. Once installed use `nodemon server.js` instead of `node server.js`.
